@@ -30,11 +30,9 @@ It allows users to perform reconnaissance, OSINT, security analysis, and simulat
 
 ### Clone the repository
 
-https://github.com/TanmayCzax/CyberPlus-1.0
+git clone https://github.com/TanmayCzax/CyberPlus-1.0
+
 cd Cyber-Programming-language-Alpha/Golang
-
-Build Cyber+
-
 
 Usage
 Check version
