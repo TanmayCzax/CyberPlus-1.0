@@ -3,56 +3,50 @@
 **FAST**
 **SAFE&SECURE**
 
-# Cyber+ ⚡  
+# Cyber+   
 **An Ethical Cyber Security Programming Language**
 
 Cyber+ is a domain‑specific programming language (DSL) designed for **ethical hacking, cybersecurity learning, and security automation**.  
 It allows users to perform reconnaissance, OSINT, security analysis, and simulations using **simple, readable scripts** (`.cbp` files).
 
-> ⚠️ Cyber+ is built strictly for **ethical, educational, and defensive security purposes only**.
+>  Cyber+ is built strictly for **ethical, educational, and defensive security purposes only**.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔍 Network & Web Reconnaissance
-- 🌐 DNS, IP, SSL, WHOIS intelligence
-- 🔐 Hashing, encoding, password utilities
-- 🛡️ Security header & HTTPS audits
-- 🧪 Ethical attack simulations
-- 📊 JSON & HTML report generation
-- ⚡ Fast Go‑based runtime
-- 📄 Simple `.cbp` scripting syntax
+-  Network & Web Reconnaissance
+-  DNS, IP, SSL, WHOIS intelligence
+-  Hashing, encoding, password utilities
+-  Security header & HTTPS audits
+-  Ethical attack simulations
+-  JSON & HTML report generation
+-  Fast Go‑based runtime
+-  Simple `.cbp` scripting syntax
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### Clone the repository
-```bash
-git clone 
-cd Cyber-Programming-language-Alpha/Golang
-Build Cyber+
-bash
-Copy code
-go build -o cyberplus
-(On Windows)
 
-powershell
-Copy code
-go build -o cyberplus.exe
+https://github.com/TanmayCzax/CyberPlus-1.0
+cd Cyber-Programming-language-Alpha/Golang
+
+Build Cyber+
+
+
 Usage
 Check version
-bash
-Copy code
+
 ./cyberplus --version
+
 Run a Cyber+ script
-bash
-Copy code
+
 ./cyberplus run filename.cbp
+
 Build a script into an executable (experimental)
-bash
-Copy code
+
 ./cyberplus build exe filename.cbp
 Example .cbp Script
 cbp
@@ -65,13 +59,12 @@ Port_Probe("scanme.nmap.org");
 DNS_Intel("example.com");
 
 Export_Report("json");
-Run it:
 
-bash
-Copy code
+
+# RUN IT:
 ./cyberplus run example.cbp
 
- Supported Commands (Highlights)
+# Supported Commands 
 Recon & Intelligence
 Dns_Lookup()
 
@@ -119,9 +112,10 @@ Export_Report("json")
 
 Export_HTML_Report()
 
-ClearReport()
+ClearReport() 
+And more!
 
-📊 Reports
+# Reports
 Cyber+ can automatically generate:
 
 cyber_report.json
@@ -130,7 +124,7 @@ cyber_report.html
 
 These contain structured results from executed commands.
 
-Ethical Disclaimer
+# Ethical Disclaimer
 Cyber+ is intended only for:
 
 Learning cybersecurity
@@ -145,7 +139,7 @@ Do NOT use Cyber+ for illegal activities.
 You are responsible for complying with local laws and regulations.
 
 
-Contributing
+# Contributing
 Contributions are welcome!
 
 Create demo .cbp scripts
