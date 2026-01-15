@@ -160,7 +160,7 @@ Brute_Force_Simulation("admin", 10000);
 
 # Summary
 
-Total commands: 29
+Total commands: 33
 
 Type: Ethical cybersecurity DSL
 
