@@ -143,6 +143,21 @@ Exports collected data as an HTML report.
 ClearReport();
 Clears all stored report data.
 
+Web_Fingerprint("example.com");
+
+HTTP_Security_Audit("example.com");
+
+Port_Probe("scanme.nmap.org");
+
+DNS_Intel("example.com");
+
+Password_Leak_Check("password123");
+
+File_Entropy("sample.exe");
+
+Brute_Force_Simulation("admin", 10000);
+
+
 # Summary
 
 Total commands: 29
