@@ -1,4 +1,4 @@
-# Cyber Plus Alpha (CPA)
+# Cyber Plus 1.0
 The first cybersecurity-only programming language.
 
 ## Why Cyber+?
