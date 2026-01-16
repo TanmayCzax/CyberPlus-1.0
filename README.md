@@ -47,7 +47,7 @@ cd Cyber-Programming-language-Alpha/Golang
 
 **./cyberplus build exe filename.cbp**
 # Example .cbp Script
-cbp
+# cbp
 Copy code
 Compute("Cyber+ Recon Started");
 
