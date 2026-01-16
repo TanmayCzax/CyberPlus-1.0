@@ -151,7 +151,7 @@ Brute_Force_Simulation("admin", 10000);
 
 
 Summary
-Total commands: 37
+Total commands: 36
 
 Type: Ethical cybersecurity DSL
 
@@ -159,7 +159,7 @@ Platform: Go-based standalone executable
 
 Focus: Reconnaissance, OSINT, analysis, reporting
 
-Comparison with Python
+# Comparison with Python
 Python code for Hashing -- import hashlib
 
 h = hashlib.sha256(b"password").hexdigest()
