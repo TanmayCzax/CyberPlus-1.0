@@ -30,23 +30,23 @@ It allows users to perform reconnaissance, OSINT, security analysis, and simulat
 
 ### Clone the repository
 
-git clone https://github.com/TanmayCzax/CyberPlus-1.0
+**git clone https://github.com/TanmayCzax/CyberPlus-1.0**
 
 cd Cyber-Programming-language-Alpha/Golang
 
-Usage
-Check version
+# Usage
+# 1 Check version
 
-./cyberplus --version
+**./cyberplus --version**
 
-Run a Cyber+ script
+# 2 Run a Cyber+ script
 
-./cyberplus run filename.cbp
+**./cyberplus run filename.cbp**
 
-Build a script into an executable (experimental)
+# 3 Build a script into an executable (experimental)
 
-./cyberplus build exe filename.cbp
-Example .cbp Script
+**./cyberplus build exe filename.cbp**
+# Example .cbp Script
 cbp
 Copy code
 Compute("Cyber+ Recon Started");
@@ -63,55 +63,113 @@ Export_Report("json");
 ./cyberplus run example.cbp
 
 # Supported Commands 
-Recon & Intelligence
-Dns_Lookup()
+# 1 Engine Control
+-- run Cyber+ Activates the Cyber+ execution engine.
 
-Subdomain_Enum()
+# 2 Core / Output
+Compute("text"); Prints text output to the console.
 
-IP_Info()
+# 3 Network Scanning & Connectivity
+Scan_Port("ip", port); Checks whether a TCP port is open or closed.
 
-GeoIP()
+Ping("host"); Sends a single ping request to a host.
 
-Reverse_IP()
+Traceroute("host"); Displays the network path to a host.
 
-Whois()
+NetworkScan("ip_start-ip_end", [ports]); Simulated ethical network scan over an IP range.
 
-SSL_Info()
+# 4 DNS & Domain Intelligence
+Dns_Lookup("domain"); Resolves domain to IP addresses.
 
-Web_Fingerprint()
+Subdomain_Enum("domain"); Enumerates subdomains using certificate transparency logs.
 
-Security Analysis
-HTTP_Security_Audit()
+Reverse_IP("ip"); Resolves domain names hosted on an IP.
 
-Check_Headers_Security()
+DomainAge("domain"); Retrieves domain registration information.
 
-CheckOpenRedirect()
+# 5 IP Intelligence & OSINT
+IP_Info("ip"); Fetches detailed IP information.
 
-CheckSSLvulnerabilities()
+GeoIP("ip"); Retrieves geographical data of an IP address.
 
-Utilities
-Hash_Compute()
+# 6 Web & URL Analysis
+URL_Status("url"); Checks HTTP response status of a URL.
 
-Base64_Encode()
+HTTP_Headers("domain"); Displays all HTTP response headers.
 
-Generate_Password()
+Check_Headers_Security("domain"); Detects missing security-related HTTP headers.
 
-Password_Leak_Check()
+# 7 SSL / TLS Analysis
+SSL_Info("domain"); Displays SSL certificate issuer and expiry.
 
-Simulation
-Port_Probe()
+CheckSSLvulnerabilities("domain"); Simulated SSL vulnerability analysis.
 
-Brute_Force_Simulation()
+# 8 WHOIS & Registration
+Whois("domain"); Retrieves WHOIS data for a domain.
 
-NetworkScan() (ethical demo mode)
+# 9 OSINT – Phone & Email
+Phone_Info("phone_number"); Provides phone number intelligence.
 
-Reporting
-Export_Report("json")
+EmailVerify("email"); Performs email format validation.
 
-Export_HTML_Report()
+# 10 Encoding, Hashing & Utilities
+Hash_Compute("text", "algorithm"); Generates hashes using md5, sha1, or sha256.
 
-ClearReport() 
-And more!
+Base64_Encode("text"); Encodes text using Base64.
+
+Base64_Decode("encoded_text"); Decodes Base64-encoded text.
+
+Generate_Password(length); Generates a random secure password.
+
+# 11 Recon Automation
+Recon("domain"); Performs automated reconnaissance (DNS, subdomains, IP info, ports, headers).
+
+# 12 Web Vulnerability Checks
+CheckOpenRedirect("domain"); Simulated open redirect vulnerability check.
+
+# 13 Reporting & Data Management
+Export_Report("json|txt"); Exports collected data to a report file.
+
+Export_HTML_Report(); Exports collected data as an HTML report.
+
+ClearReport(); Clears all stored report data.
+
+# NEW COMMANDS AFTER VERSION ALPHA -- 
+Web_Fingerprint("example.com");
+
+HTTP_Security_Audit("example.com");
+
+Port_Probe("scanme.nmap.org");
+
+DNS_Intel("example.com");
+
+Password_Leak_Check("password123");
+
+File_Entropy("sample.exe");
+
+Brute_Force_Simulation("admin", 10000);
+
+
+Summary
+Total commands: 37
+
+Type: Ethical cybersecurity DSL
+
+Platform: Go-based standalone executable
+
+Focus: Reconnaissance, OSINT, analysis, reporting
+
+Comparison with Python
+Python code for Hashing -- import hashlib
+
+h = hashlib.sha256(b"password").hexdigest()
+
+print(h)
+
+Cyber+ Alpha (CPA) command for Hashing --
+
+Hash_Compute("password", "sha256");
+
 
 # Reports
 Cyber+ can automatically generate:
