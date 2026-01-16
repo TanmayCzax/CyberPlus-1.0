@@ -150,7 +150,7 @@ File_Entropy("sample.exe");
 Brute_Force_Simulation("admin", 10000);
 
 
-Summary
+# Summary
 Total commands: 36
 
 Type: Ethical cybersecurity DSL
