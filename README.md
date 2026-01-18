@@ -9,6 +9,10 @@
 
 Cyber+ is a domain‑specific programming language (DSL) designed for **ethical hacking, cybersecurity learning, and security automation**.  
 It allows users to perform reconnaissance, OSINT, security analysis, and simulations using **simple, readable scripts** (`.cbp` files).
+<p align="center">
+  <img src="MAIN.png" width="160" alt="Cyber+ Logo">
+</p>
+
 
 >  Cyber+ is built strictly for **ethical, educational, and defensive security purposes only**.
 
