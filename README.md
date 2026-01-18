@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="MAIN.png" width="260">
+  <img src="MAIN.png" width="460">
 </p>
 
 # Cyber+ 1.0
