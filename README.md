@@ -55,8 +55,7 @@ cd Cyber-Programming-language-Alpha/Golang
 # cbp
 
 Compute("Cyber+ Recon Started");
-
-Web_Fingerprint("example.com");
+Web_Fingerprint("hey.com");
 HTTP_Security_Audit("example.com");
 Port_Probe("scanme.nmap.org");
 DNS_Intel("example.com");
