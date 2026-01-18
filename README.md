@@ -35,7 +35,7 @@ It allows users to perform reconnaissance, OSINT, security analysis, and simulat
 
 ### Clone the repository
 
-**git clone https://github.com/TanmayCzax/CyberPlus-1.0**
+**git clone https://github.com/TanmayCzax/CyberPlus-1.0.git**
 
 cd Cyber-Programming-language-Alpha/Golang
 
