@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="MAIN.png" width="160" alt="Cyber+ Logo">
+  <img src="MAIN.png" width="260">
 </p>
 
 # Cyber+ 1.0
