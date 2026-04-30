@@ -11,6 +11,7 @@ import (
 	"os"
 	"os/exec"
 	"regexp"
+	"runtime"
 	"strconv"
 	"strings"
 	"time"
@@ -99,8 +100,20 @@ func executeDnsLookup(domain string) []string {
 	return ips
 }
 
+func pingCommandFor(goos, host string) (string, []string) {
+	if goos == "windows" {
+		return "ping", []string{"-n", "1", host}
+	}
+	return "ping", []string{"-c", "1", host}
+}
+
+func pingCommand(host string) (string, []string) {
+	return pingCommandFor(runtime.GOOS, host)
+}
+
 func executePing(host string) {
-	cmd := exec.Command("ping", "-n", "1", host)
+	name, args := pingCommand(host)
+	cmd := exec.Command(name, args...)
 	out, _ := cmd.CombinedOutput()
 	fmt.Println(string(out))
 }
