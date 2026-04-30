@@ -12,6 +12,7 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
+	"runtime"
 	"strings"
 	"time"
 )
@@ -57,9 +58,21 @@ func GeneratePassword(length int) {
 
 // ----------------- Network / OSINT -----------------
 
+func tracerouteCommandFor(goos, host string) (string, []string) {
+	if goos == "windows" {
+		return "tracert", []string{host}
+	}
+	return "traceroute", []string{host}
+}
+
+func tracerouteCommand(host string) (string, []string) {
+	return tracerouteCommandFor(runtime.GOOS, host)
+}
+
 func Traceroute(host string) {
 	fmt.Println("Running traceroute to", host)
-	cmd := exec.Command("tracert", host) // Works on Windows
+	name, args := tracerouteCommand(host)
+	cmd := exec.Command(name, args...)
 	out, err := cmd.CombinedOutput()
 	if err != nil {
 		fmt.Println("Traceroute failed:", err)
